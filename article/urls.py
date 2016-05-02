@@ -9,4 +9,5 @@ urlpatterns = [
     url(r'^3/', views.template_three_simple),
     url(r'^articles/all/$', views.articles),
     url(r'^articles/get/(?P<article_id>\d+)/$', views.article),
+    url(r'^', views.articles),
 ]

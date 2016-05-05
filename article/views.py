@@ -7,21 +7,6 @@ from forms import CommentForm
 from django.core.context_processors import csrf
 from django.contrib import auth
 
-def basic_one(request):
-    view = "basic_one"
-    html = "<html><body>This is {} view.</body></html>".format(view)
-    return HttpResponse(html)
-
-def template_two(request):
-    view = "template_two"
-    t = get_template('myview.html')
-    html = t.render({'name': view})
-    return HttpResponse(html)
-
-def template_three_simple(request):
-    view = "template three simple"
-    return render_to_response('myview.html', {'name': view})
-
 def articles(request):
     return render_to_response('articles.html', {'articles': Article.objects.all(), 'username': auth.get_user(request).username})
 

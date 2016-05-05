@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'article',
+    'loginsys',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -58,6 +59,7 @@ TEMPLATES = [
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
             'C:/Users/svi/Desktop/Python/djangoenv/Scripts/djangoblog/article/templates',
+            'C:/Users/svi/Desktop/Python/djangoenv/Scripts/djangoblog/loginsys/templates',
             'C:/Users/svi/Desktop/Python/djangoenv/Scripts/djangoblog/templates',
         ],
         'APP_DIRS': True,
